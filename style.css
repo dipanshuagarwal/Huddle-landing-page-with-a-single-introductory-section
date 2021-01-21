@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("./images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    width: auto;
+}
+
+.logo{
+    margin: 0px 50px;
+}
+
+.main{
+    margin: 25px 50px 0px;
+    display: inline-block;
+}
+
+.left{
+    float: left;
+    margin-right: 20px;
+}
+
+.right {
+    color: white;
+    font-size: 20px;
+    padding: 50px 25px 0px;
+}
+
+.right h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.right button {
+    margin-top: 15px;
+    border: 0px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 10px 35px 10px;
+    border-radius: 50px;
+    box-shadow: 0px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.social{
+    margin-right: 50px;
+    text-align: right;
+}
+
+.social [class*="fa fa-"] {
+    border: 1px solid white;
+    border-radius: 30px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px 3px 5px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.social i:hover{
+    background: white;
+    color: hsl(257, 40%, 49%); 
+}
+
+@media only screen and (max-width: 376px) {
+    body {
+        background-image: url("./images/bg-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    .logo{
+        margin: 20px;
+    }
+
+    .logo img{
+        width: 20vh;
+    }
+
+    .main{
+        margin: 10px 20px 0px;
+    }
+
+    .left img{
+        width: 50vh;
+    }
+
+    .right{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .right h1{
+        font-size: 27px;
+        font-weight: 400;
+    }
+
+    .social{
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 6em;
+}
+
+.attribution a {
+    color: white;
+}
